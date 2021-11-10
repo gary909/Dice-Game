@@ -1,18 +1,19 @@
-var p1win = "Player 1 wins!";
-var p2win = "Palyer 2 wins!";
-var draw = "It's a draw!"
-
 var p1dice = 0;
-var p2dice = 1;
+var p2dice = 0;
 
-function myFunction(num1, num2) {
-    if (num1 > num2){
-        return p1win;
-    } else if (num1 < num2) {
-        return p2win;
+//var x = document.getElementById("message").innerHTML;
+
+function getRandomInt(max) {
+    p1dice = Math.floor(Math.random() * max);
+    p2dice = Math.floor(Math.random() * max);
+    if (p1dice > p2dice){
+        return "Player 1 wins! \n" + "P1 scored: " + p1dice + "\nP2 scored: " + p2dice;
+    } else if (p2dice > p1dice) {
+        return "Player 2 wins! \n" + "P1 scored: " +  p1dice + "\nP2 scored: " + p2dice;
     } else {
-        return draw;
+        return "It's a draw! \n" + "P1 scored: " +  p1dice + "\nP2 scored: " + p2dice;
     }
 }
 
-console.log(myFunction(10, 10));
+
+console.log(getRandomInt(7));
