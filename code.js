@@ -2,9 +2,6 @@ var p1dice = 0;
 var p2dice = 0;
 
 const newText = document.getElementById("newText");
-// newText.textContent = "Greetings from Mark";ss
-
-//var x = document.getElementById("message").innerHTML;
 
 function getRandomInt(max) {
     p1dice = Math.floor(Math.random() * max);
