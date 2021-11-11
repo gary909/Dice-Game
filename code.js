@@ -6,8 +6,6 @@ const newText = document.getElementById("newText");
 const diceImg1 = document.getElementById("diceImg1");
 const diceImg2 = document.getElementById("diceImg2");
 
-var myArr = [diceImg2, diceImg1];
-
 function getRandomInt() {
     p1dice = Math.floor(Math.random() * 6) + 1;
     p2dice = Math.floor(Math.random() * 6) + 1;
